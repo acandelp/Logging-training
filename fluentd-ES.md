@@ -17,6 +17,7 @@ spec:
       nodeCount: 1
       resources:
         limits:
+          cpu: 200m
           memory: 1Gi
         requests:
           cpu: 200m
