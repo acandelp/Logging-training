@@ -2,7 +2,7 @@
 
 ##### - Install [Elasticsearch Operator](https://docs.openshift.com/container-platform/4.15/observability/logging/cluster-logging-deploying.html)
 ##### - Install [Logging Operator](https://docs.openshift.com/container-platform/4.15/observability/logging/cluster-logging-deploying.html)
-##### - Deploy ClusterLogging instance 
+##### - Deploy the ClusterLogging instance 
 ```
 apiVersion: "logging.openshift.io/v1"
 kind: "ClusterLogging"
@@ -36,4 +36,19 @@ spec:
       replicas: 1
   collection:
     type: "fluentd"
+```
+##### - Deploy the ClusterLogForwarder instance (optional)
+```
+kind: ClusterLogForwarder
+metadata:
+  name: instance 
+  namespace: openshift-logging 
+spec:
+  pipelines:
+   - name: elasticsearch-application 
+     inputRefs:
+      - application
+     outputRefs:
+      - default
+     parse: json
 ```
