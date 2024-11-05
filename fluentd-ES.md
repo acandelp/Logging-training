@@ -35,8 +35,5 @@ spec:
           memory: 512Mi
       replicas: 1
   collection:
-    logs:
-      type: "fluentd"
-      fluentd:
-        resources: {}
+    type: "fluentd"
 ```
