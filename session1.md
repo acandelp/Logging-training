@@ -3,7 +3,7 @@
 
 **Installation**
 ##### - Common issues
-- Logs are not in Kibana
+- The customer cannot see the logs in Kibana
 - Logs are delayed in Kibana
 - Collector alerts
 - Cronjobs are not working properly
@@ -26,14 +26,37 @@ Elasticsearch: /03943294/must-gather.local.4358234533440916194/registry-redhat-i
 Important files: indices_size.cat, health.cat, nodes.cat
 
 If the customer cannot collect a must-gather-------
+```
+$ oc adm inspect ns/openshift-logging (also add the generated file)
+$ oc -n openshift-logging get clusterlogging instance -o yaml > clo.txt
+$ oc -n openshift-logging get clusterLogForwarder instance -o yaml > clf.txt
+$ oc -n openshift-logging get csv > csv.txt
 
-  
+$ oc rsh -c elasticsearch <elasticsearchpod>
+# es_util --query=_cat/health?v
+# es_util --query=_cat/nodes?v
+# es_util --query="_cat/indices?h=health,status,index,id,pri,rep,docs.count,docs.deleted,store.size,creation.date.string&v="
+```
+
+##### - Common checks
+
+Logging Operator Version and Elasticsearch Operator version.
+ClusterLogging Managed status.
+ClusterLogging instance.
+ClusterLogForwarder instance.
+Collector Logs.
+Elasticsearch Logs.
+Elasticsearch status.
+Kibana Logs.
+
 **Common causes**
 
 ##### - Configuration issues
 - The logs are not in a JSON format.
 - Multiline feature is not working.
 - Elasticsearch index is not defined properly.
+
+  
 
 03692480
 03608590
