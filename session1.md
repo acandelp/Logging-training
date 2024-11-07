@@ -34,7 +34,7 @@ $ oc adm inspect ns/openshift-logging (also add the generated file)
 $ oc -n openshift-logging get clusterlogging instance -o yaml > clo.txt
 $ oc -n openshift-logging get clusterLogForwarder instance -o yaml > clf.txt
 $ oc -n openshift-logging get csv > csv.txt
-
+$ $ for pod in `oc get po -l component=elasticsearch -o jsonpath='{.items[*].metadata.name}'`; do echo $pod; oc exec -c elasticsearch $pod -- df -h /elasticsearch/persistent; done
 $ oc rsh -c elasticsearch <elasticsearchpod>
 # es_util --query=_cat/health?v
 # es_util --query=_cat/nodes?v
