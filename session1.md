@@ -19,7 +19,7 @@
 ### 4)Troubleshooting
 
 
-**4.1) How to narrow down the problem?**
+#### 4.1) How to narrow down the problem?
 
 - Is the issue only happening for a concrete user?
 - Is the issue only happening for a concrete application?
@@ -27,7 +27,7 @@
 - Logging must-gather
 - Kibana screenshot
 
-**4.2) Must-gather paths**
+#### 4.2) Must-gather paths
 ```
 ClusterLogging instance (from 5.7): /must-gather.local/registry-redhat-io-openshift-logging-cluster-logging-rhel9-operator-sha256-463bdc2944690d56eb597314a7045fdb751c56e28bc6d45b279f194d4695be0f/namespaces/openshift-logging/logging.openshift.io/clusterloggings
 ClusterLogging instance (prior 5.7): /must-gather.local/registry-redhat-io-openshift-logging-cluster-logging-rhel8-operator-sha256-ad436419a03ffd76260906448cbcea146357dd102b89e791fc84be75ea30bb0f/cluster-logging/clo
@@ -38,7 +38,7 @@ Collector Buffer: /must-gather.local/registry-redhat-io-openshift-logging-cluste
 ```
 
 
-**4.3) If the customer cannot collect a must-gather**
+#### 4.3) If the customer cannot collect a must-gather
 ```
 $ oc adm inspect ns/openshift-logging (also add the generated file)
 $ oc -n openshift-logging get clusterlogging instance -o yaml > clo.txt
@@ -53,7 +53,7 @@ $ oc rsh -c elasticsearch <elasticsearchpod>
 # es_util --query="_cat/indices?h=health,status,index,id,pri,rep,docs.count,docs.deleted,store.size,creation.date.string&v="
 ```
 
-**4.4)Common checks**
+#### 4.4)Common checks
 
 - Logging Operator Version and Elasticsearch Operator version
 - ClusterLogging Managed status
