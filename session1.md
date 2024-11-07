@@ -4,7 +4,7 @@
 https://access.redhat.com/solutions/3329761
 
 **Installation**
-##### - Common issues
+**Common issues**
 - The customer cannot see the logs in Kibana.
 - Logs are delayed in Kibana.
 - Collector alerts.
