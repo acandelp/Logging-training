@@ -89,3 +89,4 @@ $ oc rsh -c elasticsearch <elasticsearchpod>
 
 Loki 03866052
 Loki 03775124
+Loki 03980750
