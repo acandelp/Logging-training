@@ -1,6 +1,8 @@
 ## Session 1. 
 **Architecture** also cronjobs
 
+https://access.redhat.com/solutions/3329761
+
 **Installation**
 ##### - Common issues
 - The customer cannot see the logs in Kibana.
@@ -66,6 +68,7 @@ Kibana Logs.
 03444961
 03582425
 03267654
+03978669
 
 
 Loki 03866052
