@@ -3,11 +3,12 @@
 
 **Installation**
 ##### - Common issues
-- The customer cannot see the logs in Kibana
-- Logs are delayed in Kibana
-- Collector alerts
-- Cronjobs are not working properly
-- Elasticsearch is in a Yellow/Red status
+- The customer cannot see the logs in Kibana.
+- Logs are delayed in Kibana.
+- Collector alerts.
+- Cronjobs are not working properly.
+- Elasticsearch is in a Yellow/Red status.
+- Elasticsearch PVC is full.
 
 **How to narrow down the problem?**
 
@@ -48,6 +49,8 @@ Collector Logs.
 Elasticsearch Logs.
 Elasticsearch status.
 Kibana Logs.
+
+
 
 **Common causes**
 
