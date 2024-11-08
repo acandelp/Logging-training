@@ -68,21 +68,29 @@ $ oc rsh -c elasticsearch <elasticsearchpod>
 
 **Common causes**
 
-##### - Configuration issues
 
 
-  
-
+### 5) Examples
 03692480
-03608590
-03444961
-03582425
-03267654
-03978669
+03444961 JSON
+03582425 JSON
+03267654 JSON el primero
+03978669 SEV1
+03861975
+03946195 SEV1
+03887839
+03896587 Crazy resources
+
+
+
+
 
 
 Loki 03866052
 Loki 03775124
 Loki 03980750
+Loki 03899254
+Loki 03887752
 
 Loki 03979519
+Loki 03873885
