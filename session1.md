@@ -1,4 +1,7 @@
 ## Session 1. 
+
+PENDING KCS EXTERNAL THIRD PARTY
+
 ### 1)Architecture
 
 -[Limitation of the OpenShift Logging Architecture](https://access.redhat.com/solutions/3329761)
