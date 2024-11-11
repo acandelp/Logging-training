@@ -18,6 +18,8 @@ PENDING KCS EXTERNAL THIRD PARTY
 - The logs are not in a JSON format.
 - Multiline feature is not working.
 - Elasticsearch index is not defined properly.
+- Logs are not send to the third-party system.
+- Some logs are not send to the third-party system.
 
 ### 4)Troubleshooting
 
