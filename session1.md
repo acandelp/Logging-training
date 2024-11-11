@@ -83,6 +83,7 @@ $ oc rsh -c elasticsearch <elasticsearchpod>
 03946195 SEV1
 03887839
 03896587 Crazy resources
+External Splunk third party 03877761
 
 
 
