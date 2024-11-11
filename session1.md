@@ -6,7 +6,7 @@ PENDING KCS EXTERNAL THIRD PARTY
 
 -[Limitation of the OpenShift Logging Architecture](https://access.redhat.com/solutions/3329761)
 
-### 2)Installation
+### 2)[Installation](https://docs.openshift.com/container-platform/4.14/observability/logging/cluster-logging-deploying.html)
 
 ### 3)Common customer issues
 - The customer cannot see the logs in Kibana.
