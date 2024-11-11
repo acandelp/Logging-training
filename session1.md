@@ -72,6 +72,10 @@ $ oc rsh -c elasticsearch <elasticsearchpod>
 - Elasticsearch Logs
 - Kibana Logs
 
+#### 4.5) Forwarding troubleshooting
+- [New Commers Check List](https://docs.google.com/spreadsheets/d/1M5DT-GiFVJt9PYAjPnMQBRCvm6tKu4KurtkRzEg0LLA/edit?gid=1234451132#gid=1234451132) Understanding and troubleshooting fluentd part 1 and 2.
+- [Metadata error sending logs to Kafka in RHOCP 4](https://access.redhat.com/solutions/6992317)
+- [Forwarding logs using syslog fails with error EMSGSIZE in OpenShift 4](https://access.redhat.com/solutions/5873961)
 
 
 **Common causes**
