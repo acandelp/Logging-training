@@ -1,6 +1,5 @@
 ## Session 1. 
 
-PENDING KCS EXTERNAL THIRD PARTY
 
 ### 1)Architecture
 
@@ -18,10 +17,11 @@ PENDING KCS EXTERNAL THIRD PARTY
 - Elasticsearch is in a Yellow/Red status.
 - Elasticsearch PVC is full.
 - The logs are not in a JSON format.
-- Multiline feature is not working.
+- The multiline feature is not working.
 - Elasticsearch index is not defined properly.
-- Logs are not send to the third-party system.
-- Some logs are not send to the third-party system.
+- Logs are not sent to the third-party system.
+- Some logs are not sent to the third-party system.
+- Cluster Log Forwarder configuration.
 
 ### 4)Troubleshooting
 
@@ -83,14 +83,14 @@ $ oc rsh -c elasticsearch <elasticsearchpod>
 
 
 ### 5) Examples
-03978669 SEV1
+03978669 
 03692480
+03946195 SEV1 external third-party
+03267654 JSON 
 03444961 JSON
 03582425 JSON
-03267654 JSON el primero
 
-03861975
-03946195 SEV1
+
 03887839
 03896587 Crazy resources
 External Splunk third party 03877761
@@ -107,4 +107,5 @@ Loki 03899254
 Loki 03887752
 
 Loki 03979519
+03861975 Vector
 Loki 03873885
