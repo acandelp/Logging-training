@@ -91,6 +91,8 @@ $ oc rsh -c elasticsearch <elasticsearchpod>
 - Examples:
 [Metadata error sending logs to Kafka in RHOCP 4](https://access.redhat.com/solutions/6992317), [Forwarding logs using syslog fails with error EMSGSIZE in OpenShift 4](https://access.redhat.com/solutions/5873961)
 
+#### 4.7) [Reproducers](https://gitlab.cee.redhat.com/aosqe/aosqe-tools/-/blob/master/logging/log_doc/deploy-log-receivers.md)
+
 
 ### 5) Support cases
 
