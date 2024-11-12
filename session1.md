@@ -1,4 +1,4 @@
-## Session 1. 
+## Session 1. Logging 5 Fluentd and Elasticsearch
 
 
 ### 1)Architecture
