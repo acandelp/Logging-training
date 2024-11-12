@@ -18,7 +18,7 @@
 ### 3)Common customer issues
 - The customer cannot see the logs in Kibana.
 - Logs are delayed in Kibana.
-- Collector alerts.
+- [Logging alerts](https://docs.openshift.com/container-platform/4.14/observability/logging/logging_alerts/default-logging-alerts.html).
 - Cronjobs are not working properly.
 - Elasticsearch is in a Yellow/Red status.
 - Elasticsearch PVC is full.
@@ -78,28 +78,26 @@ $ oc rsh -c elasticsearch <elasticsearchpod>
 - Elasticsearch Logs
 - Kibana Logs
 
-#### 4.5) Forwarding troubleshooting
+#### 4.5) [Elasticsearch alerts troubleshooting](https://docs.openshift.com/container-platform/4.10/logging/troubleshooting/cluster-logging-troubleshooting-for-critical-alerts.html)
+
+#### 4.6) Forwarding troubleshooting
 - [New Commers Check List](https://docs.google.com/spreadsheets/d/1M5DT-GiFVJt9PYAjPnMQBRCvm6tKu4KurtkRzEg0LLA/edit?gid=1234451132#gid=1234451132) Understanding and troubleshooting fluentd part 1 and 2.
-- [Metadata error sending logs to Kafka in RHOCP 4](https://access.redhat.com/solutions/6992317)
-- [Forwarding logs using syslog fails with error EMSGSIZE in OpenShift 4](https://access.redhat.com/solutions/5873961)
+
+- Examples:
+[Metadata error sending logs to Kafka in RHOCP 4](https://access.redhat.com/solutions/6992317), [Forwarding logs using syslog fails with error EMSGSIZE in OpenShift 4](https://access.redhat.com/solutions/5873961)
 
 
-**Common causes**
+### 5) Support cases
+[03978669](https://gss--c.vf.force.com/apex/Case_View?srPos=0&srKp=500&id=500Hn00001kqiaw&sfdc.override=1)
+[03896587](https://gss--c.vf.force.com/apex/Case_View?srPos=0&srKp=500&id=5006R000020b0ML&sfdc.override=1)
+[03692480](https://gss--c.vf.force.com/apex/Case_View?srPos=0&srKp=500&id=5006R00001y6x7K&sfdc.override=1)
+[03887839](https://gss--c.vf.force.com/apex/Case_View?srPos=0&srKp=500&id=5006R000020ZGdc&sfdc.override=1)
 
-
-
-### 5) Examples
-03978669 
-03692480
-03946195 SEV1 external third-party
+[03946195](https://gss--c.vf.force.com/apex/Case_View?srPos=0&srKp=500&id=5006R0000211QzP&sfdc.override=1) SEV1 external third-party
+[03877761](https://gss--c.vf.force.com/apex/Case_View?srPos=0&srKp=500&id=5006R000020P21f&sfdc.override=1) third-party
 03267654 JSON 
 03444961 JSON
 03582425 JSON
-
-
-03887839
-03896587 Crazy resources
-External Splunk third party 03877761
 
 
 
