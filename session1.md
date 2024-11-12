@@ -78,6 +78,7 @@ $ oc rsh -c elasticsearch <elasticsearchpod>
 - Elasticsearch status
 - Collector Logs
 - Elasticsearch Logs
+- Buffer status
 - Kibana Logs
 
 #### 4.5) [Elasticsearch alerts troubleshooting](https://docs.openshift.com/container-platform/4.10/logging/troubleshooting/cluster-logging-troubleshooting-for-critical-alerts.html)
