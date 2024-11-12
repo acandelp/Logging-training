@@ -88,32 +88,15 @@ $ oc rsh -c elasticsearch <elasticsearchpod>
 
 
 ### 5) Support cases
-[03978669](https://gss--c.vf.force.com/apex/Case_View?srPos=0&srKp=500&id=500Hn00001kqiaw&sfdc.override=1)
-[03887839](https://gss--c.vf.force.com/apex/Case_View?srPos=0&srKp=500&id=5006R000020ZGdc&sfdc.override=1)
 
-[03692480](https://gss--c.vf.force.com/apex/Case_View?srPos=0&srKp=500&id=5006R00001y6x7K&sfdc.override=1)
-
-
-
-[03896587](https://gss--c.vf.force.com/apex/Case_View?srPos=0&srKp=500&id=5006R000020b0ML&sfdc.override=1)
-
-[03946195](https://gss--c.vf.force.com/apex/Case_View?srPos=0&srKp=500&id=5006R0000211QzP&sfdc.override=1) SEV1 external third-party
-[03877761](https://gss--c.vf.force.com/apex/Case_View?srPos=0&srKp=500&id=5006R000020P21f&sfdc.override=1) third-party
-03267654 JSON 
-03444961 JSON
-03582425 JSON
+- Internal Elasticsearch
+[03978669](https://gss--c.vf.force.com/apex/Case_View?srPos=0&srKp=500&id=500Hn00001kqiaw&sfdc.override=1), [03887839](https://gss--c.vf.force.com/apex/Case_View?srPos=0&srKp=500&id=5006R000020ZGdc&sfdc.override=1), [03692480](https://gss--c.vf.force.com/apex/Case_View?srPos=0&srKp=500&id=5006R00001y6x7K&sfdc.override=1), [03896587](https://gss--c.vf.force.com/apex/Case_View?srPos=0&srKp=500&id=5006R000020b0ML&sfdc.override=1)
+- Forwarding logs
+[03946195](https://gss--c.vf.force.com/apex/Case_View?srPos=0&srKp=500&id=5006R0000211QzP&sfdc.override=1), [03877761](https://gss--c.vf.force.com/apex/Case_View?srPos=0&srKp=500&id=5006R000020P21f&sfdc.override=1)
+- JSON
+[03267654](https://gss--c.vf.force.com/apex/Case_View?srPos=0&srKp=500&id=5006R00001mtphr&sfdc.override=1), [03582425](https://gss--c.vf.force.com/apex/Case_View?srPos=0&srKp=500&id=5006R00001vdVZq&sfdc.override=1), [03444961](https://gss--c.vf.force.com/apex/Case_View?srPos=0&srKp=500&id=5006R00001rZf4q&sfdc.override=1) 
 
 
 
 
 
-
-Loki 03866052
-Loki 03775124
-Loki 03980750
-Loki 03899254
-Loki 03887752
-
-Loki 03979519
-03861975 Vector
-Loki 03873885
