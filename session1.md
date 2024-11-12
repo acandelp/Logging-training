@@ -6,6 +6,8 @@
 
 - [Limitation of the OpenShift Logging Architecture](https://access.redhat.com/solutions/3329761)
 
+- [Support](https://docs.openshift.com/container-platform/4.14/observability/logging/cluster-logging-support.html)
+
 ### 2)[Installation](https://docs.openshift.com/container-platform/4.14/observability/logging/cluster-logging-deploying.html)
 
 - [Configuring the logging Collector](https://docs.openshift.com/container-platform/4.14/observability/logging/log_collection_forwarding/cluster-logging-collector.html)
