@@ -89,7 +89,7 @@ $ oc rsh -c elasticsearch <elasticsearchpod>
 - [New Commers Check List](https://docs.google.com/spreadsheets/d/1M5DT-GiFVJt9PYAjPnMQBRCvm6tKu4KurtkRzEg0LLA/edit?gid=1234451132#gid=1234451132) Understanding and troubleshooting fluentd part 1 and 2.
 
 - Examples:
-[Metadata error sending logs to Kafka in RHOCP 4](https://access.redhat.com/solutions/6992317), [Forwarding logs using syslog fails with error EMSGSIZE in OpenShift 4](https://access.redhat.com/solutions/5873961)
+[Forwarding logs using syslog fails with error EMSGSIZE in OpenShift 4](https://access.redhat.com/solutions/5873961), [Elasticsearch reporting MapperParsingException](https://access.redhat.com/solutions/3986441)
 
 #### 4.7) [Reproducers](https://gitlab.cee.redhat.com/aosqe/aosqe-tools/-/blob/master/logging/log_doc/deploy-log-receivers.md)
 
