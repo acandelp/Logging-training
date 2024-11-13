@@ -1,4 +1,4 @@
-## Session 1. Logging 5 Fluentd and Elasticsearch
+## Session 1. Logging 5 with Fluentd and Elasticsearch
 
 
 ### 1)Architecture
@@ -25,9 +25,9 @@
 - [Logging alerts](https://docs.openshift.com/container-platform/4.14/observability/logging/logging_alerts/default-logging-alerts.html).
 - Cronjobs are not working properly.
 - Elasticsearch is in a Yellow/Red status.
-- Elasticsearch PVC is full.
+- Elasticsearch PVC is full. [KCS](https://access.redhat.com/solutions/6075191)
 - The logs are not in a JSON format.
-- The multiline feature is not working.
+- The multiline feature is not working. [KCS](https://access.redhat.com/solutions/5507871)
 - Elasticsearch index is not defined properly.
 - Logs are not sent to the third-party system.
 - Some logs are not sent to the third-party system.
