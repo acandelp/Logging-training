@@ -2,6 +2,7 @@
 
 
 ### 1)Architecture
+
 - [New Commers Check List](https://docs.google.com/spreadsheets/d/1M5DT-GiFVJt9PYAjPnMQBRCvm6tKu4KurtkRzEg0LLA/edit?gid=1234451132#gid=1234451132) Introduction to LokiStack
 - [Upstream documentation](https://grafana.com/docs/loki/latest/get-started/architecture/)
 
@@ -10,7 +11,7 @@
 
 - [Configuring the logging Collector](https://docs.openshift.com/container-platform/4.14/observability/logging/log_collection_forwarding/cluster-logging-collector.html)
   
-- [Configuring the Elasticsearch log store](https://docs.openshift.com/container-platform/4.14/observability/logging/log_storage/logging-config-es-store.html)
+- [Configuring the LokiStack log store](https://docs.openshift.com/container-platform/4.14/observability/logging/log_storage/cluster-logging-loki.html)
 
 - [Configuring log forwarding](https://docs.openshift.com/container-platform/4.14/observability/logging/log_collection_forwarding/configuring-log-forwarding.html)
 
@@ -23,12 +24,7 @@ Limits/requests
 - The customer cannot see the logs in Kibana.
 - Logs are delayed in Kibana.
 - [Logging alerts](https://docs.openshift.com/container-platform/4.14/observability/logging/logging_alerts/default-logging-alerts.html).
-- Cronjobs are not working properly.
-- Elasticsearch is in a Yellow/Red status.
-- Elasticsearch PVC is full.
-- The logs are not in a JSON format.
-- The multiline feature is not working.
-- Elasticsearch index is not defined properly.
+- JSON logs with Loki.
 - Logs are not sent to the third-party system.
 - Some logs are not sent to the third-party system.
 - Cluster Log Forwarder configuration.
