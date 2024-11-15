@@ -100,7 +100,7 @@ Vector OOM
 HashRing
 
 
-#### 4.6) Forwarding troubleshooting
+#### 4.6) Vector Troubleshooting
 - [New Commers Check List](https://docs.google.com/spreadsheets/d/1M5DT-GiFVJt9PYAjPnMQBRCvm6tKu4KurtkRzEg0LLA/edit?gid=1234451132#gid=1234451132) Understanding and troubleshooting fluentd part 1 and 2.
 
 - Examples:
