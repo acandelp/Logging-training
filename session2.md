@@ -27,8 +27,7 @@ Migrating the log collector from fluentd to vector reducing the number of logs d
 - [Configuring log forwarding](https://docs.openshift.com/container-platform/4.14/observability/logging/log_collection_forwarding/configuring-log-forwarding.html)
 
 
-Size
-Limits/requests
+
   
 
 ### 3)Common customer issues
