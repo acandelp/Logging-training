@@ -106,6 +106,7 @@ $ oc rsh -c elasticsearch <elasticsearchpod>
 
 ### 6) Recordings
 [Logging Session 1.1](https://drive.google.com/file/d/1OYZxcD-yzx_wb6UD_N8JmfoVXXjyWz67/view?usp=drive_link)
+
 [Logging Session 1.2](https://drive.google.com/file/d/1Ijlv1NmGKbxy0faZQM-Fz__zN0ZH133w/view?usp=drive_link)
 
 
