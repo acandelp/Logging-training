@@ -22,18 +22,17 @@
   
 - [Configuring the LokiStack log store](https://docs.openshift.com/container-platform/4.14/observability/logging/log_storage/cluster-logging-loki.html)
 
-  Migrating the default log store from Elasticsearch to Loki in OCP 4 https://access.redhat.com/articles/6991632
+[Migrating the default log store from Elasticsearch to Loki in OCP 4](https://access.redhat.com/articles/6991632)
 
 
 - [Configuring log forwarding](https://docs.openshift.com/container-platform/4.14/observability/logging/log_collection_forwarding/configuring-log-forwarding.html)
 
 
 
-  
 
 ### 3)Common customer issues
-- The customer cannot see the logs in Kibana.
-- Logs are delayed in Kibana.
+- The customer cannot see the logs in the OCP Console.
+- Logs are delayed in the OCP Console.
 - [Logging alerts](https://docs.openshift.com/container-platform/4.14/observability/logging/logging_alerts/default-logging-alerts.html).
 - JSON logs with Loki.
 - Logs are not sent to the third-party system.
@@ -42,14 +41,13 @@
 
 ### 4)Troubleshooting
 
-
 #### 4.1) How to narrow down the problem?
 
 - Is the issue only happening for a concrete user?
 - Is the issue only happening for a concrete application?
 - Is the issue only happening for the pods/applications allocated in a concrete node?
 - Logging must-gather
-- Logs console screenshot
+- Log console screenshot
 
 #### 4.2) Must-gather paths
 ```
@@ -69,27 +67,38 @@ $ oc adm inspect ns/openshift-logging (also add the generated file)
 $ oc -n openshift-logging get clusterlogging instance -o yaml > clo.txt
 $ oc -n openshift-logging get clusterLogForwarder instance -o yaml > clf.txt
 $ oc -n openshift-logging get csv > csv.txt
-$ for pod in `oc get po -l component=elasticsearch -o jsonpath='{.items[*].metadata.name}'`; do echo $pod; oc exec -c elasticsearch $pod -- df -h /elasticsearch/persistent; done
-$ for i in $(oc get pods -l component=collector | awk '/collector/ { print $1 }') ; do oc exec $i -- du -sh /var/lib/fluentd  ; done
+$ oc -n openshift-logging get LokiStack <lokistack_instance> -o yaml > lokistack.txt
+$ oc -n openshift-logging get secret <loki storage secret> > lokisecret.yaml
 
-$ oc rsh -c elasticsearch <elasticsearchpod>
-# es_util --query=_cat/health?v
-# es_util --query=_cat/nodes?v
-# es_util --query="_cat/indices?h=health,status,index,id,pri,rep,docs.count,docs.deleted,store.size,creation.date.string&v="
+===Metrics to identify log drops===
+/// Vector discarded events
+sum by(component_name) (irate(vector_buffer_discarded_events_total{component_kind="sink",component_type="loki"}[2m]))
+/// Loki distributor lines received
+sum by (tenant) (rate(loki_distributor_lines_received_total[5m]))
+/// Loki gateway response rate
+sum by (tenant, code) (rate(http_requests_total{namespace="openshift-logging",container="gateway",handler="push"}[5m]))
+/// Loki discarded samples
+sum by (tenant, reason) (irate(loki_discarded_samples_total[2m]))
+sum by (tenant,reason)(sum_over_time(loki_discarded_samples_total{namespace="openshift-logging"}[1m]))
+
 ```
 
 #### 4.4)Common checks
 
-- Logging Operator Version and Elasticsearch Operator version
+- Logging Operator Version and Loki Operator version
 - ClusterLogging Managed status
 - ClusterLogging instance
 - ClusterLogForwarder instance
-- Elasticsearch status
+- LokiStack instance
 - Collector Logs
-- Elasticsearch Logs
-- Kibana Logs
+- Loki components logs
 
-#### 4.5) [Elasticsearch alerts troubleshooting](https://docs.openshift.com/container-platform/4.10/logging/troubleshooting/cluster-logging-troubleshooting-for-critical-alerts.html)
+#### 4.5) Common Loki issues
+Ingestion burst
+Loki console timeout
+Vector OOM
+HashRing
+
 
 #### 4.6) Forwarding troubleshooting
 - [New Commers Check List](https://docs.google.com/spreadsheets/d/1M5DT-GiFVJt9PYAjPnMQBRCvm6tKu4KurtkRzEg0LLA/edit?gid=1234451132#gid=1234451132) Understanding and troubleshooting fluentd part 1 and 2.
