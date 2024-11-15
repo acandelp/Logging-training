@@ -11,12 +11,13 @@
 
 - [Configuring the logging Collector](https://docs.openshift.com/container-platform/4.14/observability/logging/log_collection_forwarding/cluster-logging-collector.html)
 
-Tuning log payloads and delivery in RHOCP 4 https://access.redhat.com/solutions/7074148
-Filtering logs 
-Performance and reliability tuning https://docs.openshift.com/container-platform/4.14/observability/logging/performance_reliability/logging-flow-control-mechanisms.html
+[Tuning log payloads and delivery in RHOCP 4](https://access.redhat.com/solutions/7074148)
 
-How to migrate Fluentd to Vector in Red Hat OpenShift Logging 5.5+ versions ? https://access.redhat.com/articles/6999658
-Migrating the log collector from fluentd to vector reducing the number of logs duplicated in RHOCP 4 https://access.redhat.com/articles/7063405
+[Performance and reliability tuning](https://docs.openshift.com/container-platform/4.14/observability/logging/performance_reliability/logging-flow-control-mechanisms.html)
+
+[How to migrate Fluentd to Vector in Red Hat OpenShift Logging 5.5+ versions ?](https://access.redhat.com/articles/6999658)
+
+[Migrating the log collector from fluentd to vector reducing the number of logs duplicated in RHOCP 4](https://access.redhat.com/articles/7063405)
 
   
 - [Configuring the LokiStack log store](https://docs.openshift.com/container-platform/4.14/observability/logging/log_storage/cluster-logging-loki.html)
