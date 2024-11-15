@@ -48,7 +48,7 @@ Migrating the log collector from fluentd to vector reducing the number of logs d
 - Is the issue only happening for a concrete application?
 - Is the issue only happening for the pods/applications allocated in a concrete node?
 - Logging must-gather
-- Kibana screenshot
+- Logs console screenshot
 
 #### 4.2) Must-gather paths
 ```
