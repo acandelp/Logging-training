@@ -10,8 +10,19 @@
 ### 2)[Installation](https://docs.openshift.com/container-platform/4.16/observability/logging/log_storage/installing-log-storage.html#logging-loki-gui-install_installing-log-storage)
 
 - [Configuring the logging Collector](https://docs.openshift.com/container-platform/4.14/observability/logging/log_collection_forwarding/cluster-logging-collector.html)
+
+Tuning log payloads and delivery in RHOCP 4 https://access.redhat.com/solutions/7074148
+Filtering logs 
+Performance and reliability tuning https://docs.openshift.com/container-platform/4.14/observability/logging/performance_reliability/logging-flow-control-mechanisms.html
+
+How to migrate Fluentd to Vector in Red Hat OpenShift Logging 5.5+ versions ? https://access.redhat.com/articles/6999658
+Migrating the log collector from fluentd to vector reducing the number of logs duplicated in RHOCP 4 https://access.redhat.com/articles/7063405
+
   
 - [Configuring the LokiStack log store](https://docs.openshift.com/container-platform/4.14/observability/logging/log_storage/cluster-logging-loki.html)
+
+  Migrating the default log store from Elasticsearch to Loki in OCP 4 https://access.redhat.com/articles/6991632
+
 
 - [Configuring log forwarding](https://docs.openshift.com/container-platform/4.14/observability/logging/log_collection_forwarding/configuring-log-forwarding.html)
 
