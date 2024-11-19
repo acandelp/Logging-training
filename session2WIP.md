@@ -109,6 +109,8 @@ Configuration issue
 ### 5) Support cases
 
 - Loki
+[03959863](https://gss--c.vf.force.com/apex/Case_View?id=5006R00002144DH&sfdc.override=1) Config issue first to comment
+[03809176](https://gss--c.vf.force.com/apex/Case_View?srPos=0&srKp=500&id=5006R00001wgefc&sfdc.override=1)
 [03737922](https://gss--c.vf.force.com/apex/Case_View?srPos=11&srKp=500&srF=1&id=5006R00001ywIZr&sfdc.override=1)
 [03866052](https://gss--c.vf.force.com/apex/Case_View?srPos=0&srKp=500&id=5006R000020MyFz&sfdc.override=1)
 [03775124](https://gss--c.vf.force.com/apex/Case_View?srPos=0&srKp=500&id=5006R00001zBYCs&sfdc.override=1)
@@ -122,5 +124,6 @@ Configuration issue
 [03725529](https://gss--c.vf.force.com/apex/Case_View?srPos=66&srKp=500&srF=1&id=5006R00001ylVaI&sfdc.override=1)
 [03925134](https://gss--c.vf.force.com/apex/Case_View?id=5006R000020p125&sfdc.override=1)
 [03953146](https://gss--c.vf.force.com/apex/Case_View?id=5006R0000212ohh&sfdc.override=1) config issue
+
 
 
