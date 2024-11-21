@@ -75,8 +75,8 @@ ClusterLogging instance (from 5.7): /must-gather.local/registry-redhat-io-opensh
 ClusterLogging instance (prior 5.7): /must-gather.local/registry-redhat-io-openshift-logging-cluster-logging-rhel8-operator-sha256-ad436419a03ffd76260906448cbcea146357dd102b89e791fc84be75ea30bb0f/cluster-logging/clo
 ClusterLogForwarder instance (from 5.7): /must-gather.local/registry-redhat-io-openshift-logging-cluster-logging-rhel9-operator-sha256-463bdc2944690d56eb597314a7045fdb751c56e28bc6d45b279f194d4695be0f/namespaces/openshift-logging/logging.openshift.io/clusterlogforwarders
 ClusterLogForwarder instance (prior 5.7): /must-gather.local/registry-redhat-io-openshift-logging-cluster-logging-rhel8-operator-sha256-ad436419a03ffd76260906448cbcea146357dd102b89e791fc84be75ea30bb0f/cluster-logging/clo
-Elasticsearch: /must-gather.local/registry-redhat-io-openshift-logging-cluster-logging-rhel9-operator-sha256-463bdc2944690d56eb597314a7045fdb751c56e28bc6d45b279f194d4695be0f/cluster-logging/es/cluster-elasticsearch
-Collector Buffer: /must-gather.local/registry-redhat-io-openshift-logging-cluster-logging-rhel8-operator-sha256-ad436419a03ffd76260906448cbcea146357dd102b89e791fc84be75ea30bb0f/cluster-logging/collector
+LokiStack instance: /must-gather.local/registry-redhat-io-openshift-logging-cluster-logging-rhel9-operator-sha256-695733369faba7b24b5ebecdbb23be5629965072d970f41e7560ad7e7bd20765/cluster-logging/lokistack
+Vector config file: /must-gather.local/registry-redhat-io-openshift-logging-cluster-logging-rhel9-operator-sha256-695733369faba7b24b5ebecdbb23be5629965072d970f41e7560ad7e7bd20765/cluster-logging/clo/openshift-logging/collector-config_vector.toml
 ```
 
 
@@ -87,7 +87,7 @@ $ oc -n openshift-logging get clusterlogging instance -o yaml > clo.txt
 $ oc -n openshift-logging get clusterLogForwarder instance -o yaml > clf.txt
 $ oc -n openshift-logging get csv > csv.txt
 $ oc -n openshift-logging get LokiStack <lokistack_instance> -o yaml > lokistack.txt
-$ oc -n openshift-logging get secret <loki storage secret> > lokisecret.yaml
+$ oc -n openshift-logging get secret <loki storage secret> > lokisecret.yaml (only to check the secret keys)
 
 ===Metrics to identify log drops===
 /// Vector discarded events
@@ -128,21 +128,32 @@ Configuration issue
 ### 5) Support cases
 
 - Loki
-[03959863](https://gss--c.vf.force.com/apex/Case_View?id=5006R00002144DH&sfdc.override=1) Config issue first to comment
-[03809176](https://gss--c.vf.force.com/apex/Case_View?srPos=0&srKp=500&id=5006R00001wgefc&sfdc.override=1)
-[03737922](https://gss--c.vf.force.com/apex/Case_View?srPos=11&srKp=500&srF=1&id=5006R00001ywIZr&sfdc.override=1)
-[03866052](https://gss--c.vf.force.com/apex/Case_View?srPos=0&srKp=500&id=5006R000020MyFz&sfdc.override=1)
-[03775124](https://gss--c.vf.force.com/apex/Case_View?srPos=0&srKp=500&id=5006R00001zBYCs&sfdc.override=1)
-[03980750](https://gss--c.vf.force.com/apex/Case_View?srPos=0&srKp=500&id=500Hn00001kqp6A&sfdc.override=1)
-[03887752](https://gss--c.vf.force.com/apex/Case_View?srPos=0&srKp=500&id=5006R000020ZFxl&sfdc.override=1)
-[03861975](https://gss--c.vf.force.com/apex/Case_View?srPos=0&srKp=500&id=5006R000020MEMM&sfdc.override=1)
-[03873885](https://gss--c.vf.force.com/apex/Case_View?srPos=0&srKp=500&id=5006R000020OJ1U&sfdc.override=1)
-[03927622](https://gss--c.vf.force.com/apex/Case_View?srPos=0&srKp=500&id=5006R000020xw9L&sfdc.override=1)
-[03944455](https://gss--c.vf.force.com/apex/Case_View?sbstr=03944455)
-[03871025](https://gss--c.vf.force.com/apex/Case_View?srPos=47&srKp=500&srF=1&id=5006R000020NpjY&sfdc.override=1)
-[03725529](https://gss--c.vf.force.com/apex/Case_View?srPos=66&srKp=500&srF=1&id=5006R00001ylVaI&sfdc.override=1)
-[03925134](https://gss--c.vf.force.com/apex/Case_View?id=5006R000020p125&sfdc.override=1)
-[03953146](https://gss--c.vf.force.com/apex/Case_View?id=5006R0000212ohh&sfdc.override=1) config issue
+[03959863](https://gss--c.vf.force.com/apex/Case_View?id=5006R00002144DH&sfdc.override=1) config issue
+[03925134](https://gss--c.vf.force.com/apex/Case_View?id=5006R000020p125&sfdc.override=1) storage problem
+
+[03809176](https://gss--c.vf.force.com/apex/Case_View?srPos=0&srKp=500&id=5006R00001wgefc&sfdc.override=1#comment_a0a6R00000WYdyiQAD) VW escalated case migration
+
+[03737922](https://gss--c.vf.force.com/apex/Case_View?srPos=11&srKp=500&srF=1&id=5006R00001ywIZr&sfdc.override=1) Configuration issue
+
+[03866052](https://gss--c.vf.force.com/apex/Case_View?srPos=0&srKp=500&id=5006R000020MyFz&sfdc.override=1) storage problem
+
+
+[03980750](https://gss--c.vf.force.com/apex/Case_View?srPos=0&srKp=500&id=500Hn00001kqp6A&sfdc.override=1) filter configuration
+
+[03861975](https://gss--c.vf.force.com/apex/Case_View?srPos=0&srKp=500&id=5006R000020MEMM&sfdc.override=1) filter config fluentd
+
+[03873885](https://gss--c.vf.force.com/apex/Case_View?srPos=0&srKp=500&id=5006R000020OJ1U&sfdc.override=1) debugging pod and call
+
+
+[03944455](https://gss--c.vf.force.com/apex/Case_View?sbstr=03944455) no necesario enseñar, solo poner el ejemplo
+
+[03871025](https://gss--c.vf.force.com/apex/Case_View?srPos=47&srKp=500&srF=1&id=5006R000020NpjY&sfdc.override=1) Error en lectura, los logs están, IMPORTANTE ENSEÑAR
+
+[03725529](https://gss--c.vf.force.com/apex/Case_View?srPos=66&srKp=500&srF=1&id=5006R00001ylVaI&sfdc.override=1) Configuration issue
+
+
+
+
 
 
 
