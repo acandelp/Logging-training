@@ -35,9 +35,10 @@
 - [Performance and reliability tuning](https://docs.openshift.com/container-platform/4.14/observability/logging/performance_reliability/logging-flow-control-mechanisms.html)
 
 - [JSON logs with Loki](https://access.redhat.com/solutions/7048604).
+  
+- [Why Loki needs block and object storage in RHOCP 4?](https://access.redhat.com/solutions/7062821).
 
-
-
+- [LokistackSchemaUpgradesRequired warning alert firing in RHOCP 4](https://access.redhat.com/solutions/7063482).
   
 
 
