@@ -20,18 +20,28 @@
 - [Installation steps
 - Session installation
 
-[Tuning log payloads and delivery in RHOCP 4](https://access.redhat.com/solutions/7074148)
+#### 2.2) Collector and logStorage migration
 
-[Performance and reliability tuning](https://docs.openshift.com/container-platform/4.14/observability/logging/performance_reliability/logging-flow-control-mechanisms.html)
+- [How to migrate Fluentd to Vector in Red Hat OpenShift Logging 5.5+ versions ?](https://access.redhat.com/articles/6999658)
 
-[How to migrate Fluentd to Vector in Red Hat OpenShift Logging 5.5+ versions ?](https://access.redhat.com/articles/6999658)
+- [Migrating the log collector from fluentd to vector reducing the number of logs duplicated in RHOCP 4](https://access.redhat.com/articles/7063405)
 
-[Migrating the log collector from fluentd to vector reducing the number of logs duplicated in RHOCP 4](https://access.redhat.com/articles/7063405)
+- [Migrating the default log store from Elasticsearch to Loki in OCP 4](https://access.redhat.com/articles/6991632)
+
+#### 2.2) Useful configuration information
+
+- [Tuning log payloads and delivery in RHOCP 4](https://access.redhat.com/solutions/7074148)
+
+- [Performance and reliability tuning](https://docs.openshift.com/container-platform/4.14/observability/logging/performance_reliability/logging-flow-control-mechanisms.html)
+
+- [JSON logs with Loki](https://access.redhat.com/solutions/7048604).
+
+
 
   
 
 
-[Migrating the default log store from Elasticsearch to Loki in OCP 4](https://access.redhat.com/articles/6991632)
+
 
 
 
@@ -43,7 +53,7 @@
 - The customer cannot see the logs in the OCP Console.
 - Logs are delayed in the OCP Console.
 - [Logging alerts](https://docs.openshift.com/container-platform/4.14/observability/logging/logging_alerts/default-logging-alerts.html).
-- JSON logs with Loki.
+- [JSON logs with Loki](https://access.redhat.com/solutions/7048604).
 - Logs are not sent to the third-party system.
 - Some logs are not sent to the third-party system.
 - Cluster Log Forwarder configuration.
