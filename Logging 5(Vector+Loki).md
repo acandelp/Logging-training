@@ -18,7 +18,7 @@
   
 - [Configuring log forwarding](https://docs.openshift.com/container-platform/4.14/observability/logging/log_collection_forwarding/configuring-log-forwarding.html)
 
-- [Step by Step installation](https://drive.google.com/file/d/1G75BKcR-_35WcSt7lra_TYYBUzBfxYUm/view)
+- [Step by Step installation Video](https://drive.google.com/file/d/1G75BKcR-_35WcSt7lra_TYYBUzBfxYUm/view)
 
 #### 2.2) Collector and logStorage migration
 
