@@ -3,8 +3,9 @@
 
 ### 1)Architecture
 
-- [New Commers Check List](https://docs.google.com/spreadsheets/d/1M5DT-GiFVJt9PYAjPnMQBRCvm6tKu4KurtkRzEg0LLA/edit?gid=1234451132#gid=1234451132) Introduction to LokiStack
+- [Introduction to LokiStack](https://videos.learning.redhat.com/playlist/dedicated/251079123/1_ojvcvz0p/1_24vvknfn)
 - [Upstream documentation](https://grafana.com/docs/loki/latest/get-started/architecture/)
+- [Introduction to LokiStack Operations/Dashboard](https://videos.learning.redhat.com/playlist/dedicated/251079123/1_ojvcvz0p/1_zq29kjud)
 
 
 ### 2)[Installation](https://docs.openshift.com/container-platform/4.16/observability/logging/log_storage/installing-log-storage.html#logging-loki-gui-install_installing-log-storage)
@@ -40,12 +41,6 @@
 
 - [LokistackSchemaUpgradesRequired warning alert firing in RHOCP 4](https://access.redhat.com/solutions/7063482).
   
-
-
-
-
-
-
 
 
 
@@ -89,7 +84,10 @@ $ oc -n openshift-logging get clusterLogForwarder instance -o yaml > clf.txt
 $ oc -n openshift-logging get csv > csv.txt
 $ oc -n openshift-logging get LokiStack <lokistack_instance> -o yaml > lokistack.txt
 $ oc -n openshift-logging get secret <loki storage secret> > lokisecret.yaml (only to check the secret keys)
+```
 
+#### 4.4) Extra information for checking Loki
+```
 ===Metrics to identify log drops===
 /// Vector discarded events
 sum by(component_name) (irate(vector_buffer_discarded_events_total{component_kind="sink",component_type="loki"}[2m]))
@@ -101,9 +99,11 @@ sum by (tenant, code) (rate(http_requests_total{namespace="openshift-logging",co
 sum by (tenant, reason) (irate(loki_discarded_samples_total[2m]))
 sum by (tenant,reason)(sum_over_time(loki_discarded_samples_total{namespace="openshift-logging"}[1m]))
 
+- [Loki Dashboards](https://docs.openshift.com/container-platform/4.14/observability/logging/logging_alerts/default-logging-alerts.html).
+
 ```
 
-#### 4.4)Common checks
+#### 4.5)Common checks
 
 - Logging Operator Version and Loki Operator version
 - ClusterLogging Managed status
@@ -113,7 +113,7 @@ sum by (tenant,reason)(sum_over_time(loki_discarded_samples_total{namespace="ope
 - Collector Logs
 - Loki components logs
 
-#### 4.5) Common Loki issues
+#### 4.6) Common Loki issues
 Ingestion burst
 Loki console timeout
 Vector OOM
@@ -121,7 +121,7 @@ HashRing
 Configuration issue
 
 
-#### 4.6) Vector Troubleshooting
+#### 4.7) Vector Troubleshooting
 - [Troubleshooting Vector Draft](https://docs.google.com/document/d/1IhQZLhQNcbA8lZ-DuO_3YWOwhOIpCXv0GA7BxF2ECeA/edit?tab=t.0#heading=h.s3ccwubfbig0) 
 
 
