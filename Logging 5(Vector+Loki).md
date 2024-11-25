@@ -112,15 +112,8 @@ sum by (tenant,reason)(sum_over_time(loki_discarded_samples_total{namespace="ope
 - Collector Logs
 - Loki components logs
 
-#### 4.6) Common Loki issues
-Ingestion burst
-Loki console timeout
-Vector OOM
-HashRing
-Configuration issue
 
-
-#### 4.7) Vector Troubleshooting
+#### 4.6) Vector Troubleshooting
 - [Troubleshooting Vector Draft](https://docs.google.com/document/d/1IhQZLhQNcbA8lZ-DuO_3YWOwhOIpCXv0GA7BxF2ECeA/edit?tab=t.0#heading=h.s3ccwubfbig0) 
 
 
