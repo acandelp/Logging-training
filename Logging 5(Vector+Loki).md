@@ -83,7 +83,6 @@ $ oc -n openshift-logging get clusterlogging instance -o yaml > clo.txt
 $ oc -n openshift-logging get clusterLogForwarder instance -o yaml > clf.txt
 $ oc -n openshift-logging get csv > csv.txt
 $ oc -n openshift-logging get LokiStack <lokistack_instance> -o yaml > lokistack.txt
-$ oc -n openshift-logging get secret <loki storage secret> > lokisecret.yaml (only to check the secret keys)
 ```
 
 #### 4.4) Extra information for checking Loki
@@ -98,10 +97,10 @@ sum by (tenant, code) (rate(http_requests_total{namespace="openshift-logging",co
 /// Loki discarded samples
 sum by (tenant, reason) (irate(loki_discarded_samples_total[2m]))
 sum by (tenant,reason)(sum_over_time(loki_discarded_samples_total{namespace="openshift-logging"}[1m]))
-
+```
 - [Loki Dashboards](https://videos.learning.redhat.com/playlist/dedicated/251079123/1_ojvcvz0p/1_zq29kjud).
 
-```
+
 
 #### 4.5)Common checks
 
