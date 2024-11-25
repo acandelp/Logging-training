@@ -99,7 +99,7 @@ sum by (tenant, code) (rate(http_requests_total{namespace="openshift-logging",co
 sum by (tenant, reason) (irate(loki_discarded_samples_total[2m]))
 sum by (tenant,reason)(sum_over_time(loki_discarded_samples_total{namespace="openshift-logging"}[1m]))
 
-- [Loki Dashboards](https://docs.openshift.com/container-platform/4.14/observability/logging/logging_alerts/default-logging-alerts.html).
+- [Loki Dashboards](https://videos.learning.redhat.com/playlist/dedicated/251079123/1_ojvcvz0p/1_zq29kjud).
 
 ```
 
