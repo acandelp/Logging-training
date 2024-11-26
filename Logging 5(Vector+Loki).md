@@ -61,6 +61,8 @@
 - Is the issue only happening for a concrete application?
 - Is the issue only happening for the pods/applications allocated in a concrete node?
 - Logging must-gather
+- Loki Dashboards
+- Collector Dashboards
 - Log console screenshot
 
 #### 4.2) Must-gather paths
