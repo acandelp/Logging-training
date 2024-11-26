@@ -111,7 +111,7 @@ sum by (tenant,reason)(sum_over_time(loki_discarded_samples_total{namespace="ope
 - ClusterLogForwarder instance
 - LokiStack instance
 - Collector Logs
-- Loki components logs
+- Loki pods logs
 
 
 #### 4.6) Vector Troubleshooting
