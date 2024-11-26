@@ -139,7 +139,6 @@ sum by (tenant,reason)(sum_over_time(loki_discarded_samples_total{namespace="ope
 [03873885](https://gss--c.vf.force.com/apex/Case_View?srPos=0&srKp=500&id=5006R000020OJ1U&sfdc.override=1) debugging pod and call
 
 
-[03944455](https://gss--c.vf.force.com/apex/Case_View?sbstr=03944455) no necesario enseñar, solo poner el ejemplo
 
 [03871025](https://gss--c.vf.force.com/apex/Case_View?srPos=47&srKp=500&srF=1&id=5006R000020NpjY&sfdc.override=1) Error en lectura, los logs están, IMPORTANTE ENSEÑAR
 
