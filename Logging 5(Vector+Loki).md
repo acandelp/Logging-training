@@ -107,9 +107,9 @@ sum by (tenant,reason)(sum_over_time(loki_discarded_samples_total{namespace="ope
 
 - Logging Operator Version and Loki Operator version
 - ClusterLogging Managed status
+- - LokiStack instance
 - ClusterLogging instance
 - ClusterLogForwarder instance
-- LokiStack instance
 - Collector Logs
 - Loki pods logs
 
