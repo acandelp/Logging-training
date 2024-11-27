@@ -42,9 +42,9 @@
 - [Why Loki needs block and object storage in RHOCP 4?](https://access.redhat.com/solutions/7062821)
 
 - [LokistackSchemaUpgradesRequired warning alert firing in RHOCP 4](https://access.redhat.com/solutions/7063482)
-- 
+  
 - [Request validation Loki rate limits](https://grafana.com/docs/loki/latest/operations/request-validation-rate-limits/)
-- 
+  
 - [Defining retention for logs in LokiStack in RHOCP4](https://access.redhat.com/solutions/7053212)
   
 
