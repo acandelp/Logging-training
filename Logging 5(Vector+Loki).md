@@ -4,8 +4,8 @@
 ### 1)Architecture
 
 - [Introduction to LokiStack](https://videos.learning.redhat.com/playlist/dedicated/251079123/1_ojvcvz0p/1_24vvknfn)
-- [Upstream documentation](https://grafana.com/docs/loki/latest/get-started/architecture/)
 - [Introduction to LokiStack Operations/Dashboard](https://videos.learning.redhat.com/playlist/dedicated/251079123/1_ojvcvz0p/1_zq29kjud)
+- [Upstream documentation](https://grafana.com/docs/loki/latest/get-started/architecture/)
 
 
 ### 2)[Installation](https://docs.openshift.com/container-platform/4.16/observability/logging/log_storage/installing-log-storage.html#logging-loki-gui-install_installing-log-storage)
