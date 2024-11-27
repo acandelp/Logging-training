@@ -41,16 +41,18 @@ spec:
 ```
 $ oc create sa collector -n openshift-logging
 ```
-##### - Create the Cluster Role Binding for the Service Account:
-```
-$ oc create clusterrolebinding collect-application-logs --clusterrole=collect-application-logs --serviceaccount openshift-logging:collector
-$ oc create clusterrolebinding collect-infrastructure-logs --clusterrole=collect-infrastructure-logs --serviceaccount openshift-logging:collector
-$ oc create clusterrolebinding collect-audit-logs --clusterrole=collect-audit-logs --serviceaccount openshift-logging:collector
-```
+
 ##### - Bind the writer Cluster Role to the Service Account:
 ```
 $ oc adm policy add-cluster-role-to-user logging-collector-logs-writer -z collector
 ```
+#### - Add additional roles to the collector service account:
+```
+$ oc adm policy add-cluster-role-to-user collect-application-logs -z collector
+$ oc adm policy add-cluster-role-to-user collect-audit-logs -z collector
+$ oc adm policy add-cluster-role-to-user collect-infrastructure-logs -z collector
+```
+
 ##### - Deploy the UIPlugin to enable the Log section in the Observe tab:
 ```
 apiVersion: observability.openshift.io/v1alpha1
