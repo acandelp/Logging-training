@@ -1,4 +1,4 @@
-## LOGGING 6. 
+## LOGGING 6
 
 
 ### 1)Migration
