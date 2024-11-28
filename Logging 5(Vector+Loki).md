@@ -104,6 +104,13 @@ sum by (tenant, code) (rate(http_requests_total{namespace="openshift-logging",co
 /// Loki discarded samples
 sum by (tenant, reason) (irate(loki_discarded_samples_total[2m]))
 sum by (tenant,reason)(sum_over_time(loki_discarded_samples_total{namespace="openshift-logging"}[1m]))
+/// Loki ingester wal
+loki_ingester_wal_records_logged_total {namespace="openshift-logging"}
+loki_ingester_wal_disk_full_failures_total{namespace="openshift-logging"}
+loki_ingester_wal_replay_duration_seconds{namespace="openshift-logging"}
+loki_ingester_wal_logged_bytes_total{namespace="openshift-logging"}
+loki_ingester_wal_discarded_bytes_total{namespace="openshift-logging"}
+loki_ingester_wal_recovered_bytes_total{namespace="openshift-logging"}
 ```
 - [Loki Dashboards](https://videos.learning.redhat.com/playlist/dedicated/251079123/1_ojvcvz0p/1_zq29kjud).
 
