@@ -128,14 +128,13 @@ sum by (tenant,reason)(sum_over_time(loki_discarded_samples_total{namespace="ope
 
 ### 5) Support cases
 
-- [Trouebleshooting cases video](https://drive.google.com/file/d/1OPEeoI4Un4PBFexo6g_CEjl10eLo1ENv/view)
+- [Troubleshooting cases Video](https://drive.google.com/file/d/1OPEeoI4Un4PBFexo6g_CEjl10eLo1ENv/view)
 
 - Configuration issues [03959863](https://gss--c.vf.force.com/apex/Case_View?id=5006R00002144DH&sfdc.override=1), [03725529](https://gss--c.vf.force.com/apex/Case_View?srPos=66&srKp=500&srF=1&id=5006R00001ylVaI&sfdc.override=1), [03737922](https://gss--c.vf.force.com/apex/Case_View?srPos=11&srKp=500&srF=1&id=5006R00001ywIZr&sfdc.override=1)
   
 - Storage issue [03925134](https://gss--c.vf.force.com/apex/Case_View?id=5006R000020p125&sfdc.override=1), [03866052](https://gss--c.vf.force.com/apex/Case_View?srPos=0&srKp=500&id=5006R000020MyFz&sfdc.override=1).
 
 - Read logs issue [03871025](https://gss--c.vf.force.com/apex/Case_View?srPos=47&srKp=500&srF=1&id=5006R000020NpjY&sfdc.override=1).
-
 
 - Filter cases [03980750](https://gss--c.vf.force.com/apex/Case_View?srPos=0&srKp=500&id=500Hn00001kqp6A&sfdc.override=1), [03861975](https://gss--c.vf.force.com/apex/Case_View?srPos=0&srKp=500&id=5006R000020MEMM&sfdc.override=1) 
 
