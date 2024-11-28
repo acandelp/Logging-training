@@ -58,6 +58,7 @@
 - Logs are not sent to the third-party system.
 - Some logs are not sent to the third-party system.
 - Cluster Log Forwarder configuration.
+- [Loki ingester is in 0/1 status](https://access.redhat.com/solutions/7028049)
 
 ### 4)Troubleshooting
 
