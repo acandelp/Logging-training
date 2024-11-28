@@ -1,5 +1,4 @@
-## Session 2. 
-
+## Logging 5 with Vector and Loki
 
 ### 1)Architecture
 
