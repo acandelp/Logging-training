@@ -1,4 +1,4 @@
-## Scenario 2 Vector+Elasticsearch (deprecated)
+## Vector+Elasticsearch (deprecated)
 
 ##### - Install [Elasticsearch Operator](https://docs.openshift.com/container-platform/4.15/observability/logging/cluster-logging-deploying.html)
 ##### - Install [Logging Operator](https://docs.openshift.com/container-platform/4.15/observability/logging/cluster-logging-deploying.html)
