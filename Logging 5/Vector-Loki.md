@@ -14,8 +14,8 @@ stringData:
   access_key_id: <>
   access_key_secret: <>
   bucketnames: <>
-  endpoint: https://s3.eu-west-3.amazonaws.com
-  region: eu-west-3
+  endpoint: <>
+  region: <>
 ```
 ##### - Deploy the LokiStack instance
 ```
