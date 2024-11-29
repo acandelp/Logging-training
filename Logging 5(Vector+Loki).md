@@ -153,7 +153,7 @@ loki_ingester_wal_recovered_bytes_total{namespace="openshift-logging"}
 
 ### 6) Recording
 
-- [Logging session 2](https://drive.google.com/file/d/1mfd2REMeJeCm1tyigWj0GL89FQNfkJY-/view?usp=drive_link)
+- [Logging Session 2](https://drive.google.com/file/d/1mfd2REMeJeCm1tyigWj0GL89FQNfkJY-/view?usp=drive_link)
 
 
 
