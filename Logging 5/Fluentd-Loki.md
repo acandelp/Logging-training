@@ -1,4 +1,4 @@
-## Scenario 3 Fluentd+Loki (deprecated)
+## Fluentd+Loki (deprecated)
 
 ##### - Install [Loki Operator](https://docs.openshift.com/container-platform/4.15/observability/logging/log_storage/installing-log-storage.html#logging-loki-gui-install_installing-log-storage)
 ##### - Install [Logging Operator](https://docs.openshift.com/container-platform/4.15/observability/logging/log_storage/installing-log-storage.html#logging-loki-gui-install_installing-log-storage)
